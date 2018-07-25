@@ -1,0 +1,13 @@
+*** Settings ***
+Library         HelloWorld.py
+*** Test Cases ***
+HelloWorld
+   Hello Word
+
+Write File
+   Write File	lom/abcd.xml
+   Verify File	lom/abcd.xml
+   Write File   lom/abc.xml
+   Verify File  lom/abc.xml
+   Match Xml    lom/abcd.xml  lom/abc.xml
+   Clean Folder 	lom 
