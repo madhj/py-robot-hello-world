@@ -9,5 +9,6 @@ Write File
    Verify File	lom/abcd.xml
    Write File   lom/abc.xml
    Verify File  lom/abc.xml
+   Sleep   10 seconds
    Match Xml    lom/abcd.xml  lom/abc.xml
-   Clean Folder 	lom 
+   Clean Folder 	lom
